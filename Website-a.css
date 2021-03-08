@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    display: grid;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: Roboto;
+
+}
+
+.outline {
+    background-color: lightgrey;
+    width: 50%;
+    border: 1px solid green;
+    padding: 0px;
+    margin: 50px;
+  }
+
+.heading{
+    position: relative;
+    text-align: left;
+    padding-top: 5%;
+    font-family: roboto-black;
+    font-size: 40px;
+}
+.subheading{
+    position: relative;
+    text-align: left;
+    font-size: 20px;
+    font-family: roboto-medium;
+}
+.text{
+    position: relative;
+    /* text-align: center; */
+    font-family: roboto-regular;
+}
+.image1{
+    position: relative;
+    text-align: center;
+}
+.image2{
+    position: relative;
+    text-align: center;
+}

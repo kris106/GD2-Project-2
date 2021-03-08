@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    display: grid;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 100px;
+    text-align: center;
+    padding: 10;
+}
+/* NAVBAR */
+nav{
+    width: 100%;
+    background: #262626;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+li{
+    float: left;
+}
+/* ANCHOR SETTING */
+a{
+    padding: 20px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* COLOUR BLOCKS */
+#section1{
+    height: 700px;
+    background-color: pink;
+    display: inline-block;
+    width:  100%;
+}
+#section2{
+    height: 700px;
+    background-color: peru;
+    display: inline-block;
+    width:  100%;
+}
+#section3{
+    height: 700px;
+    background-color: cornflowerblue;
+    display: inline-block;
+    width:  100%;
+}
+#section4{
+    height: 700px;
+    background-color: bisque;
+    display: inline-block;
+    width:  100%;
+}
+#section5{
+    height: 700px;
+    background-color: plum;
+    display: inline-block;
+    width:  100%;
+}
+#section6{
+    height: 800px;
+    background-color: black;
+    display: inline-block;
+    width:  100%;
+}
+/* GLOWING BUTTON SETTINGS */
+button{
+    top: 250px;
+    height: 60px;
+    width: 200px;
+    margin-left: 300px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+button:first-of-type:hover{
+    background: linear-gradient(90deg, #03a9f4,#f5ce62, #03a9f4);
+    background-size: 400%;
+}
+button:last-of-type:hover{
+    background: linear-gradient(90deg, #fa7199, #f5ce62, #fa7199);
+    background-size: 400%;
+}
+button:first-of-type:hover:before,
+button:last-of-type:hover:before{
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 100px;
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+button:first-of-type:hover:before,
+button:last-of-type:hover:before{
+    opacity: 1;
+    z-index: -1;
+}
+button:hover{
+    z-index: 1;
+    animation: glow 8s linear infinite;
+}
+@keyframes glow {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+    background-position: 400%;
+    }
+}
+/* ENJOY THE SHOW (TEXT) */
+h2{
+    display: flex;
+    overflow-wrap: normal;
+    justify-content: center;
+    position: relative;
+    min-height: 20vh;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    top: 200px;
+    letter-spacing: 20%;
+    text-transform: uppercase;
+    line-height: 10px;
+    outline: none;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate
+{
+    60%, 65%, 80%, 90.1%, 92%
+    {
+        color: #000000;
+        text-shadow: none;
+        filter:blur(10px);
+    }
+    30%, 50%, 60%, 65%
+    {
+        color: rgb(218, 170, 0);
+        text-shadow: 0 0 10px #ffe139,
+        0 0 20px #ffe139
+        0 0 40px #ffe139
+        0 0 80px #ffe139
+        0 0 160px #ffe139
+    }
+}
+
+.center{
+    position: relative;
+    padding-left: 20%;
+}
